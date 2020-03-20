@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="list.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header class="appBar">
+      <h1 class="appBar-title">Todo List App</h1>
+    </header>
+    <!-- <img src="documentation/no-styling.png" alt="application with no styling" /> -->
+    <!-- ASSIGNMENT CONTENT GOES BELOW HERE -->
+    <label>
+      New Task:<input type="text" placeholder="Enter New Task" id="newTask" />
+      <button id="js-addTask">
+        Add Task
+      </button>
+    </label>
 
-  <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+    <h3>
+      <b>My To Do List</b>
+    </h3>
 
-  <title>Todo List</title>
-</head>
-<body>
-  <header class="appBar">
-    <h1 class="appBar-title">Todo List App</h1>
-  </header>
+    <ul id="js-toDoList">
+      <li>There are no tasks</li>
+    </ul>
 
-
-  <!-- ASSIGNMENT CONTENT GOES BELOW HERE -->
-
-
-  <footer class="footer">
-    &copy; Prime Digital Academy
-  </footer>
-
-</body>
+    <footer class="footer">
+      &copy; Prime Digital Academy
+    </footer>
+  </body>
 </html>
